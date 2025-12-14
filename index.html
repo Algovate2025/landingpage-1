@@ -834,10 +834,10 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1>
-                    Diese KI lernt aus <span class="highlight" id="memberCount">7.807</span> erfolgreichen Tradern gleichzeitig:<br>
-                    <span style="font-size: 0.85em;">und handelt für dich, während dein Geld sicher bleibt</span>
+                    <span class="highlight">KI-Trading</span> das für dich arbeitet<br>
+                    <span style="font-size: 0.8em;">Dein Geld bleibt sicher – die KI handelt</span>
                 </h1>
-                <p>Unsere selbstlernende KI analysiert jede Marktbewegung in Echtzeit und passt deine Gold & Forex-Trades automatisch an – auf DEINEM eigenen Konto.</p>
+                <p>Unsere selbstlernende KI analysiert jede Marktbewegung in Echtzeit und passt deine Gold & Forex-Trades automatisch an – auf DEINEM eigenen Konto</p>
 
                 <div class="trust-badges">
                     <div class="badge">
@@ -846,16 +846,16 @@
                     </div>
                     <div class="badge">
                         <span class="badge-icon">✓</span>
-                        <span>4.8/5 Trustpilot</span>
+                        <span>87% profitable Trades</span>
                     </div>
                     <div class="badge" style="background: rgba(212,175,55,0.1); border-color: rgba(212,175,55,0.25);">
                         <span class="badge-icon" style="background: #D4AF37;">⚡</span>
-                        <span style="color: #D4AF37; font-weight: 600;">Nur 7 Plätze heute</span>
+                        <span style="color: #D4AF37; font-weight: 600;">Letzte Plätze</span>
                     </div>
                 </div>
 
-                <a href="https://taap.it/fkcampaign1" class="cta-primary"><span>Kostenlos Zugang sichern</span></a>
-                <div class="urgency-text">⚡ Nur noch 7 Plätze verfügbar heute</div>
+                <a href="https://taap.it/fkcampaign1" class="cta-primary"><span>Jetzt Community beitreten</span></a>
+                <div class="urgency-text">⚡ Begrenzte Kapazität – nur wenige Slots frei</div>
             </div>
 
             <div class="hero-visual">
@@ -893,7 +893,7 @@
                         <div class="pulse-dot"></div>
                         <span>Echte Ergebnisse</span>
                     </div>
-                    <p>Echte Trades unserer <strong>KI</strong> – vollautomatisch und profitabel, während du schläfst.</p>
+                    <p>Echte Trades unserer <strong>KI</strong> – vollautomatisch und profitabel, während du schläfst</p>
                 </div>
             </div>
 
@@ -926,7 +926,7 @@
                 <div class="feature-card success-rate">
                     <div class="feature-number">4</div>
                     <div class="feature-content">
-                        <div class="feature-title">Erfolgsquote</div>
+                        <div class="feature-title">Profitable Trades</div>
                         <div class="success-value">87%</div>
                     </div>
                 </div>
@@ -937,12 +937,12 @@
     <!-- Desktop Bottom CTA -->
     <section class="bottom-cta-section">
         <a href="https://taap.it/fkcampaign1" class="bottom-cta-button">
-            Jetzt kostenlos starten →
+            Jetzt beitreten →
         </a>
     </section>
 
     <a href="https://taap.it/fkcampaign1" class="floating-cta">
-        <span>Kostenlos starten</span>
+        <span>Beitreten</span>
     </a>
 
     <script>
@@ -1022,15 +1022,11 @@
             var targetMembers = 7807;
             var targetEarning = 847;
 
-            if (memberEl) {
-                animateNumber(memberEl, 0, targetMembers, 2600, function(val) {
-                    var n = Math.round(val);
-                    return n.toLocaleString('de-DE');
-                });
-            }
-
             if (badgeEl) {
-                badgeEl.textContent = targetMembers.toLocaleString('de-DE') + '+ Mitglieder';
+                animateNumber(badgeEl, 0, targetMembers, 2600, function(val) {
+                    var n = Math.round(val);
+                    return n.toLocaleString('de-DE') + '+ Mitglieder';
+                });
             }
 
             if (earningEl) {
